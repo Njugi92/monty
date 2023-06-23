@@ -9,16 +9,16 @@
 
 void f_push(stack_t **head, unsigned int counter)
 {
-int n, k = 0, flag = 0;
+int n, j = 0, flag = 0;
 
 if (bus.arg)
 {
 if (bus.arg[0] == '-')
-k++;
+j++;
 
-for (; bus.arg[k] != '\0'; k++)
+for (; bus.arg[j] != '\0'; j++)
 {
-if (bus.arg[k] > 57 || bus.arg[k] < 48)
+if (bus.arg[j] > 57 || bus.arg[j] < 48)
 flag = 1;
 }
 
